@@ -7,4 +7,5 @@ urlpatterns = [
     path('',mainapp.home),
     path("about/",mainapp.about),
     path("contact/",mainapp.contact),
+    path("service/",mainapp.services),
 ]
