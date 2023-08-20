@@ -6,6 +6,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',mainapp.home),
     path("about/",mainapp.about),
-    path("contact/",mainapp.contact),
+    path("skill/",mainapp.skills),
     path("service/",mainapp.services),
+    path("contact/",mainapp.contact),
 ]
