@@ -24,3 +24,10 @@ def contact(Request):
 def about(Request):
     return render(Request,"index.html")
 
+
+def skills(Request):
+    return render(Request,"index.html")
+
+
+def services(Request):
+    return render(Request,"index.html")
