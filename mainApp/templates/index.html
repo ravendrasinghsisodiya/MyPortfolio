@@ -329,7 +329,8 @@
                             </div>
                             <div class="ms-sm-4">
                                 <h4 class="mb-3">FrontEnd Development</h4>
-                                <span class="skills">I can create the responsive, user friendly interface, user interface (UI) of
+                                <span class="skills">I can create the responsive, user friendly interface, user
+                                    interface (UI) of
                                     websites using HTML5, CSS3, JavaScript and frontend framework like React JS.
 
                                 </span>
@@ -414,8 +415,13 @@
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-
-                        <form method="post">
+                        {% for i in messages %}
+                        <div class="alert alert-danger alert-dismissible fade show text-center p-4" role="alert">
+                            {{i}}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        {% endfor %}
+                        <form action="" method="post">
                             {% csrf_token %}
                             <div class="row g-3">
                                 <div class="col-md-6 pt-3">
