@@ -146,8 +146,8 @@
 
                     </p>
                     <div class="d-flex align-items-center pt-5 background">
-                        <a href="https://doc-08-c8-prod-01-apps-viewer.googleusercontent.com/viewer2/prod-01/pdf/7lipespa5qo7945sbvnv68lcjchhn8fi/dmav85bj2b239c20pt43sgg697hh0j46/1692549075000/3/112358334663976779479/APznzaZWLKGBT0BRmpbdPoSHjbIQCGXDOWY3RO1iJozQ7nrJcC_vQVLpkrkvTI_8hST16Zr3oWYgvyMcnRDglgYdbpMesKHirEIzhOntX4ZXbPWflpgkPNHyCRRDCnAzobaOrleVqkqbA6T1eXrM6KrcZEGXfydXQ9VjIGxSzkaVjgxdqkxuyR03M9OXT7DiRNYgYbNt7vPXZSOyGTeyVhf9HCa9kUgza3xzMc8GpyksFbPHil0z_HT1_nii-GPTFISp35KcxhOkkeMXJ_cb6B-8R_IbM-4qI3VNTcE0hUDuaz8QDkCyd1Du8wxWU8wEDkXnkdsI10uhxyweo13cEs3F8mXlLK_z1vs1EkrNXlginIlkbvjfyGYgLMlw9tI5QZwXJkompu9Bqwwz0t3nkytKGHzm_AjjRg==?authuser=0&nonce=k0otfulit3fuk&user=112358334663976779479&hash=4p9fjttprup41sohljb2g2m6atpm4u95"
-                            class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+                        <a href="https://drive.google.com/file/d/1_IxuLyla1jVkkfZaz6n13x2DmpqxKHsA/view"
+                                class="btn btn-primary py-3 px-4 me-5">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -329,7 +329,8 @@
                             </div>
                             <div class="ms-sm-4">
                                 <h4 class="mb-3">FrontEnd Development</h4>
-                                <span class="skills">I can create the responsive, user friendly interface, user interface (UI) of
+                                <span class="skills">I can create the responsive, user friendly interface, user
+                                    interface (UI) of
                                     websites using HTML5, CSS3, JavaScript and frontend framework like React JS.
 
                                 </span>
@@ -414,8 +415,13 @@
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-
-                        <form method="post">
+                        {% for i in messages %}
+                        <div class="alert alert-danger alert-dismissible fade show text-center p-4" role="alert">
+                            {{i}}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        {% endfor %}
+                        <form action="" method="post">
                             {% csrf_token %}
                             <div class="row g-3">
                                 <div class="col-md-6 pt-3">
